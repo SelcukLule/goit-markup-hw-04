@@ -26,7 +26,9 @@ body {
 .container-bir {
   display: flex;
   border-bottom: 1px solid var(--accent-color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08)
 }
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -56,6 +58,7 @@ body {
 .container .logo,
 .logo-renk-iki {
   /* display: flex; */
+  position: relative;
   justify-content: start;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -80,9 +83,25 @@ body {
   text-decoration: none;
 }
 .menu-bir {
+  position: relative;
   text-decoration: none;
   color: var(--dark-navy-blue);
   padding: 24px 0;
+}
+.menu-bir .active{
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-bir .active::after{
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px; 
 }
 .menu-bir:hover {
   color: var(--primary-brand-color-iris);
@@ -105,6 +124,7 @@ body {
 }
 .info-bir {
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-bir:hover {
   color: var(--pressed-state-color-ocean);
@@ -115,20 +135,25 @@ body {
     max-width: 1440px;
   background-size: cover;
    margin: 0 auto;
-   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+   /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpeg); */
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+   /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),
    rgba(46, 47, 66, 0.7)) url(../images/people-office.jpg);
-   background-image: url(../images/people-office.jpg);
+   background-image: url(../images/people-office.jpg); */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
 
 }
 .hero-image .container {
    width: 1440px;
   height: 600px; 
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),
    rgba(46, 47, 66, 0.7)) url(../images/people-office.jpg);
   
   background-image: url(../images/Dark-bg.jpg);
-  opacity: 0.7;
+  opacity: 0.7; */
 
 
   display: flex;
