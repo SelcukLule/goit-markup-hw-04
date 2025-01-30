@@ -413,19 +413,24 @@ body {
 .bitis {
   background-color: var(--dark-navy-blue);
   padding: 100px 0;
-  
+  display: flex;
+
 
 
 }
 .bitis .container {
   display: flex;
-  flex-direction: column;
+  
   flex-wrap: wrap;
   align-items: baseline;
-  margin-right: 120px;
+  
   
 
  
+}
+.footer-div{
+  margin-right: 120px;
+  
 }
 .logo {
   display: inline-block;
