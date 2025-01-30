@@ -88,14 +88,15 @@ body {
   color: var(--dark-navy-blue);
   padding: 24px 0;
   
+  
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo .active{
+.menu-bir, .active{
   position: relative;
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo .active::after{
+.menu-bir .active::after{
   content: "";
   width: 100%;
   position: absolute;
